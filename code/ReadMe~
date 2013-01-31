@@ -1,0 +1,37 @@
+//////////////////////////////////////////////////////////////////
+//		 Folder(s)/File(s) included			//
+//////////////////////////////////////////////////////////////////
+
+CL	Includes all the header files for OpenCL. While following
+	OpenCL Installation Guide, skip step #6 and just run the
+	the command,
+	sudo cp /path-to-CL-folder /usr/include/
+
+
+
+//////////////////////////////////////////////////////////////////
+//		 Commands to run Sequential Code		//
+//////////////////////////////////////////////////////////////////
+
+1. g++ mst.cpp -o mst
+2. ./mst
+
+//////////////////////////////////////////////////////////////////
+//		 Commands to run OpenCL Code			//
+//////////////////////////////////////////////////////////////////
+
+1. g++ -c -Wall -I /usr/include/CL/ filename.c -o filename.o
+2. g++ filename.o -o filename -L /usr/lib64/OpenCL/ -l OpenCL
+3 ./filename
+
+///////////////////////////////////////////////////////////////////
+//		Included Header File(s)				 //
+///////////////////////////////////////////////////////////////////
+
+I've added the required header files that my program file uses.
+If for some reason your LD_LIBRARY_PATH hasn't been exported or
+there's some invalid path error etc, my program will read the
+header file from the similar directory.
+
+Note: For you ease, I've added a folder named CL - which includes
+all the header files, in the package.
