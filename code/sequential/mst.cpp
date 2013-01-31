@@ -1,6 +1,6 @@
-/* pmst.cpp
+/* mst.cpp
 *
-*  The algorithm in this file is a (partially) parallel implementation of 
+*  The algorithm in this file is a sequential implementation of 
 *  Boruvka's algorithm to find Minimum Spanning Tree (MST) of a Graph.
 *
 */
