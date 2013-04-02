@@ -23,8 +23,8 @@ code/parallel/pmst.cpp:    Implentation of parallel program
 
 Commands to run Sequential Code
 -------------------------------
-1. g++ mst.cpp -o mst
-2. ./mst
+1. g++ filename.cpp -o filename
+2. ./filename
 
 Commands to run OpenCL Code
 ---------------------------
